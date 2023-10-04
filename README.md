@@ -12,6 +12,8 @@ Projeto iniciado dia 22-09-2023, onde será abordado neste projeto os seguintes 
 -	Swagger
 -	JWT
 
+![localhost_7027_index html](https://github.com/AllanR1991/senai-filmes-webApi/assets/22855740/70c93f0b-716e-4d58-89cb-53ca592e4505)
+
 ## Recursos utilizados durante o desenvolvimento: 
 
 -	SO: 
