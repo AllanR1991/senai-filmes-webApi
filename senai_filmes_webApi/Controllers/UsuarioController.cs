@@ -41,7 +41,11 @@ namespace senai_filmes_webApi.Controllers
         /// </summary>
         /// <param name="login">Objeto do tipo UsuarioDomain</param>
         /// <returns>Retorna token, caso contrario retorna NotFound</returns>
+        /// <response code="200">Retorna token</response>
+        /// <response code="404">E-mail ou senha inválidos!</response>
         [HttpPost("Login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult Login(UsuarioDomain login)
         {
             UsuarioDomain usuarioBuscado = _usuarioRepository.BuscarPorEmailSenha(login.email, login.senha);
